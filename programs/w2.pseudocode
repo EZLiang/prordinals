@@ -1,0 +1,10 @@
+# w*2! A major milestone!
+x='x=\'0\';'+
+'loop{print(x);'+
+'replaceAll(x,\'\\\\\',\'\\\\\\\\\');'+
+'replaceAll(x,\'\\\'\',\'\\\\\\\'\');'+
+'x=\'print(\\\'\'+x+\'\\\')\';}';
+loop{print(x);replaceAll(x,'\\','\\\\');
+replaceAll(x,'\'','\\\'');
+x='print(\''+x+'\')';
+}

@@ -1,0 +1,12 @@
+# The original codegolf challenge
+x=0;
+loop{
+print(x);
+replaceAll(x,'\\','\\\\');
+replaceAll(x,'\'','\\\'');
+x='x=\''+x+'\';'+
+'loop{print(x);'+
+'replaceAll(x,\'\\\\\',\'\\\\\\\\\');'+
+'replaceAll(x,\'\\\'\',\'\\\\\\\'\');'+
+'x=\'print(\\\'\'+x+\'\\\')\';}';
+}

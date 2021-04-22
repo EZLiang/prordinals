@@ -1,0 +1,8 @@
+# a pseudocode program with value omega.
+x=0
+loop{
+print(x)
+replaceAll(x,'\\','\\\\')
+replaceAll(x,'\'','\\\'')
+x='\'print('+x+')\''
+}

@@ -1,0 +1,4 @@
+# Massively golfed
+# One line
+# Very painful
+s="j=\"[print(\\\"s=\\\\\\\"\\\"+e(s)+\\\"\\\\\\\";exec(s);\\\"+j+i+\\\"\\\\\\\")]\\\") for i in a(\\\"\";e=lambda x:x.replace(\"\\\\\",\"\\\\\\\\\").replace(\"\\\"\",\"\\\\\\\"\").replace(\"\\n\", \"\\\\n\")\ndef a(x):\n  if x==\"\":return\n  if x[-1]==\")\":yield a(x[1:-1]);return\n  if x[-1]==\"A\":yield x[:-1];return\n  p=0;c=\"\";d=\"\";y=list(x)\n  while True:\n    h=y.pop(-2);c+=h;p+=1 if h==\")\" else -1 if h==\"(\" else 0\n    if p==0:break\n  y=\"\".join(y[:-1])\n  if x[-1]==\"R\":\n    c=c[1:-1]\n    if y[-2]==\")\":\n      while True:\n        h=y.pop(-2);d+=h;p+=1 if h==\")\" else -1 if h==\"(\" else 0\n        if p==0:break\n    else:\n      d=\"(\"+c+\")\"\n    y=\"\".join(y[:-1])\n    while True:yield y+d;d=\"(\"+d+\")\"+c\n  y=\"\".join(y[:-1]);d=c[1:-1];e=c\n  while True:yield y+d;d=e+d";exec(s);[print("s=\""+e(s)+"\";exec(s);"+j+i+"\")]") for i in a("(A)(R)((E)(R))R")]
